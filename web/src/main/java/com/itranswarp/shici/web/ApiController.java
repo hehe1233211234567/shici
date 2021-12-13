@@ -50,7 +50,7 @@ public class ApiController extends AbstractController {
 		return this.poemService.getPoem(id);
 	}
 
-	@GetMapping("/api/poems/today")
+	@GetMapping("/api/poems/today/")
 	public Poem getTodayPoem() {
 		return this.poemService.getFeatured();
 	}
